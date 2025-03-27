@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS "oper" (
 CREATE TABLE IF NOT EXISTS users (
     "name" text NOT NULL,
     "password" text NOT NULL,
-    "host" text NOT NULL,
+    "host" text NOT NULL
 );
 
 OP 查询
