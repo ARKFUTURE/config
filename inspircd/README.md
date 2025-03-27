@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 OP 查询
-SELECT name,'*' as host,type,password,'pbkdf2-hmac-sha512' as hash FROM oper WHERE oper_class IS NOT NULLs
+SELECT name, host, type, password, 'hmac-sha512' as hash FROM oper WHERE active=1 AND type IS NOT NULL
 
 User查询
 SELECT * FROM users WHERE name='$nick' LIMIT 1
