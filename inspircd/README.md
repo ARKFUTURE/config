@@ -20,13 +20,14 @@ CREATE TABLE IF NOT EXISTS "ircd_opers" (
 
 新建user表
 CREATE TABLE IF NOT EXISTS users (
+    "active" bool NOT NULL DEFAULT true,
     "name" text NOT NULL,
-    "password" text NOT NULL,
-    "host" text NOT NULL
+    "user" text NOT NULL,
+    "password" text NOT NULL
 );
 
 OP 查询
-SELECT name, host, type, password, 'hmac-sha512' as hash FROM oper WHERE active=1 AND type IS NOT NULL
+SELECT name,password,hash,host,type FROM oper WHERE active=1 AND type IS NOT NULL LIMIT 1
 
 User查询
 SELECT * FROM users WHERE name='$nick' LIMIT 1
