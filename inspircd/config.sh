@@ -2,7 +2,8 @@
 MIRROR="https://ghfast.top/"
 echo "更新配置文件"
 echo "! 此操作会覆盖掉您的配置文件 !"
-echo "此脚本仅适用测试最新的ARKFUTURE nossl配置 以及 更新ARKFUTURE的默认配置"
+echo "ARKFUTURE 服务器正式的配置文件"
+sleep 3
 if [ "$(id -u)" -ne 0 ]; then
     echo "错误：请使用 sudo 或 root 权限执行本脚本"
     exit 1
