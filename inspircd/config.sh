@@ -18,18 +18,17 @@ mkdir txt
 mkdir ssl
 wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/inspircd.conf"
 cd /etc/inspircd/conf
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/helpop.conf"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/opers.conf"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/permchannels.conf"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/xline.db"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/conf/helpop.conf"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/conf/permchannels.conf"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/conf/xline.db"
 wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/modulesconf.conf"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/ascii.conf"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/conf/ascii.conf"
 wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/conf/auth.sq3"
 cd /etc/inspircd/txt
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/txt/motd.txt"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/txt/opermotd.txt"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/txt/quotes.txt"
-wget "${MIRROR}https://raw.githubusercontent.com/ARKFUTURE/config/refs/heads/main/inspircd/txt/rules.txt"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/txt/motd.txt"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/txt/opermotd.txt"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/txt/quotes.txt"
+wget "https://arkfuture.github.io/ARKFUTURE/CONFIG/inspircd/txt/rules.txt"
 cd /etc/inspircd/
 chmod 644 /etc/inspircd/ -R
 sleep 3
