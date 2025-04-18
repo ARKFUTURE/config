@@ -2,7 +2,7 @@
 MIRROR="https://ghfast.top/"
 echo "更新配置文件"
 echo "! 此操作会覆盖掉您的配置文件 !"
-echo "ARKFUTURE 服务器正式的配置文件"
+echo "ARKFUTURE 服务器正式的配置文件, 是ARKFUTURE公共配置的分支配置"
 sleep 3
 if [ "$(id -u)" -ne 0 ]; then
     echo "错误：请使用 sudo 或 root 权限执行本脚本"
